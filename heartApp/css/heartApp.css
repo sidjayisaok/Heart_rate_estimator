@@ -11,6 +11,9 @@ body{
     background-color: #FF4599;
     object-fit: contain;
     font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 input{
@@ -19,11 +22,12 @@ input{
     align-content: center;
 }
 
-input[type=text]{
+input[type=number]{
     color: #000077;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     font-size: 16px;
+    max-width: 75px;
 }
 
 #box{
@@ -34,6 +38,7 @@ input[type=text]{
     padding: 10%;
     margin: 1% 2% 1% 2%;
     text-align: center;
+    border-radius: 5%;
 }
 
 header, footer{
@@ -42,8 +47,9 @@ header, footer{
     color: #FFF;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin: 0 auto;
+    height: 100px;
     text-align: center;
-    font-size: 10px;
 }
 
 #ageForm{
@@ -53,6 +59,13 @@ header, footer{
     margin-left: 250px;
     max-width: 250px;
     border: 1px #161632;
+    border-radius: 50%;
+}
+
+#ageForm:hover{
+    background-color: #990000;
+    box-shadow: 2px 4px 6px #080808;
+    border: 3px #323264;
 }
 
 #maxForm{
@@ -60,9 +73,17 @@ header, footer{
     box-shadow: 1px 2px 3px #444444;
     padding: 1%;
     margin: 1%;
-    max-width: 150px;
+    max-width: 175px;
     height: 100px;
     float: left;
+    border-radius: 25%;
+    border: 1px #333333;
+}
+
+#maxForm:hover{
+    background-color: #550000;
+    box-shadow: 2px 4px 6px #222222;
+    border: 3px #242424;
 }
 
 #lightForm{
@@ -70,9 +91,17 @@ header, footer{
     box-shadow: 1px 2px 3px #887766;
     padding: 1%;
     margin: 1%;
-    max-width: 150px;
+    max-width: 175px;
     height: 100px;
     float: left;
+    border-radius: 30%;
+    border: 1px #665544;
+}
+
+#lightForm:hover{
+    background-color: #FF9A9A;
+    box-shadow: 2px 4px 6px #443322;
+    border: 3px #332211;
 }
 
 #mediumForm{
@@ -80,9 +109,17 @@ header, footer{
     box-shadow: 1px 2px 3px #776655;
     padding: 1%;
     margin: 1%;
-    max-width: 150px;
+    max-width: 175px;
     height: 100px;
     float: left;
+    border-radius: 40%;
+    border: 1px #554433;
+}
+
+#mediumForm:hover{
+    background-color: #FF7777;
+    box-shadow: 2px 4px 6px #553311;
+    border: 3px #112233;
 }
 
 #heavyForm{
@@ -90,13 +127,29 @@ header, footer{
     box-shadow: 1px 2px 3px #665544;
     padding: 1%;
     margin: 1%;
-    max-width: 150px;
+    max-width: 175px;
     height: 100px;
     float: left;
+    border-radius: 45%;
+    border: 1px #442211;
+}
+
+#heavyForm:hover{
+    background-color: #FF5555;
+    box-shadow: 2px 4px 6px #443322;
+    border: 3px #112244;
 }
 
 #contain{
     width: 800px;
     max-height: 150px;
     padding: 5%;
+}
+
+#topAnchor{
+    font-size: 30px;
+}
+
+#bottomAnchor{
+    font-size: 12px;
 }

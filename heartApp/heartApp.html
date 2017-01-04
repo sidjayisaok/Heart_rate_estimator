@@ -5,23 +5,28 @@
     <title>
         Heart rate calculator
     </title>
-
+    <!--css here-->
     <link rel="stylesheet" type="text/css" href="css/heartApp.css">
-
+    <!--font library via fonts.google.com-->
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!--animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="misc/favicon-16x16.png">
 
-    <header>
+
+    <header id="topAnchor">
         <p>Heart Rate range estimator</p>
     </header>
 
     <body>
         <div ng-app="heartApp" ng-controller="heartController" id="box">
-
+            <!--form-->
             <div id="ageForm">
                 <p>Enter age</p>
-                <p><input type="text" ng-model="heart.age"></p>
+                <p><input type="number" ng-model="heart.age" ng-minlength="1" ng-maxlength="3" min="1" max="220" ng-class="{'red':ageForm.input.$invalid}" ></p>
             </div>
-           
+           <!--output boxes-->
            <div id="contain">
                 <div id="maxForm">
                     <p>Max heart rate</p>
@@ -47,9 +52,15 @@
             
         </div>
 
-        <!--don't forget to use the Angular CDN-->
+        <!--jQuery CDN-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+
+        <!--Angular CDN-->
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
         </script>
+
+        <!--animate.css controller-->
+        <script src="js/animate.js"></script>
 
         <!--this is the module file-->
         <script src="js/heartModule.js"></script>
@@ -57,9 +68,11 @@
         <!--this is the controller file-->
         <script src="js/heartController.js"></script>
 
+
+
     </body>
 
-    <footer>
+    <footer id="bottomAnchor">
         2017 <a href="https://sidjayisaok.herokuapp.com">Sid Jay</a>. This app uses Angular.js.
     </footer>
 </html>

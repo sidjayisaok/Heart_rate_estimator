@@ -1,16 +1,13 @@
+//basic controller
 heartApp.controller('heartController', function($scope){
     $scope.heart = {
         age: 25,
         rate: 120,
         range: function(){
-            var heartObject;
+          var heartObject;
             heartObject = $scope.heart;
             heartObject.rate = 220 - heartObject.age;
             return heartObject.rate + " bpm";
-            if(heartObject.rate > 220){
-                alert("You cannot enter a number larger than 220");
-                return null;
-            };
         },
         light: function(){
             var heartObject;
