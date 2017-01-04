@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <title>
+        Heart rate calculator
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/heartApp.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <header>
+        <p>Heart Rate range estimator</p>
+    </header>
+
+    <body>
+        <div ng-app="heartApp" ng-controller="heartController" id="box">
+
+            <div id="ageForm">
+                <p>Enter age</p>
+                <p><input type="text" ng-model="heart.age"></p>
+            </div>
+           
+           <div id="contain">
+                <div id="maxForm">
+                    <p>Max heart rate</p>
+                    <p>{{heart.range()}}</p>
+                </div>
+                
+                <div id="lightForm">
+                    <p>Light heart range</p>
+                    <p>{{heart.light()}}</p>
+                </div>
+                
+                <div id="mediumForm">
+                    <p>Medium heart range</p>
+                    <p>{{heart.medium()}}</p>
+                </div>
+                
+                <div id="heavyForm">
+                    <p>Heavy heart range</p>
+                    <p>{{heart.heavy()}}</p>
+                </div>
+           </div>
+            
+            
+        </div>
+
+        <!--don't forget to use the Angular CDN-->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
+        </script>
+
+        <!--this is the module file-->
+        <script src="js/heartModule.js"></script>
+
+        <!--this is the controller file-->
+        <script src="js/heartController.js"></script>
+
+    </body>
+
+    <footer>
+        2017 <a href="https://sidjayisaok.herokuapp.com">Sid Jay</a>. This app uses Angular.js.
+    </footer>
+</html>
