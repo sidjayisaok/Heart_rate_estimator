@@ -27,27 +27,34 @@
             <!--form-->
             <div id="ageForm">
                 <p>Enter age</p>
+                <hr>
                 <p><input type="number" ng-model="heart.age" ng-minlength="1" ng-maxlength="3" min="1" max="220" ng-class="{'red':ageForm.input.$invalid}" ></p>
             </div>
+
+            <hr>
            <!--output boxes-->
            <div id="contain">
                 <div id="maxForm">
                     <p>Max heart rate</p>
+                    <hr>
                     <p>{{heart.range()}}</p>
                 </div>
                 
                 <div id="lightForm">
                     <p>Light heart range</p>
+                    <hr>
                     <p>{{heart.light()}}</p>
                 </div>
                 
                 <div id="mediumForm">
                     <p>Medium heart range</p>
+                    <hr>
                     <p>{{heart.medium()}}</p>
                 </div>
                 
                 <div id="heavyForm">
                     <p>Heavy heart range</p>
+                    <hr>
                     <p>{{heart.heavy()}}</p>
                 </div>
            </div>
