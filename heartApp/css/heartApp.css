@@ -41,6 +41,11 @@ input[type=number]{
     border-radius: 5%;
 }
 
+#box:hover{
+    background-color: #FF0808;
+    box-shadow: 2px 4px 6px #323232;
+}
+
 header, footer{
     background-color: #440000;
     box-shadow: 1px 2px 4px #777;
@@ -152,4 +157,51 @@ header, footer{
 
 #bottomAnchor{
     font-size: 12px;
+}
+
+@media (max-width: 435px) and (orientation: portrait) {
+    #contain{
+        width: 400px;
+        padding: .5%;
+        margin-left: 2.5%;
+    }
+
+    #ageForm{
+        margin-left: 18%;
+        width: 400px;
+        height: 150px;
+    }
+
+    #maxForm, #lightForm, #mediumForm, #heavyForm{
+      width: 400px;
+      height: 150px;  
+    }
+
+    #box{
+        height: 575px;
+        width: 425px;
+    }
+
+    #topAnchor, #bottomAnchor{
+        width: 550px;
+    }
+
+    body{
+        max-width: 430px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 750px) and (orientation: landscape){
+    #ageForm{
+        margin-left: 25%;
+    }
+
+    #contain{
+        margin-left: -15%;
+        margin-bottom: 10%;
+    }
+
+    #topAnchor, #bottomAnchor{
+        width: 860px;
+    }
 }

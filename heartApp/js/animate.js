@@ -8,6 +8,7 @@ var heavyForm = '#heavyForm';
 //animate.css classes
 var pulseClass = 'animated pulse';
 var zoomInClass = 'animated zoomIn';
+var flashClass = 'animated flash';
 var endClass ='webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 //basic function
@@ -29,7 +30,7 @@ function logicAnim(param, classA, classB){
 }
 
 //call function
-logicAnim(ageForm, zoomInClass, pulseClass);
+logicAnim(ageForm, flashClass, pulseClass);
 
 logicAnim(maxForm, zoomInClass, pulseClass);
 
