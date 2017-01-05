@@ -1,6 +1,7 @@
 //variables used
 var express = require('express');
 var app = express();
+var favIcon = require('serve-favicon');
 var Port = process.env.PORT || 8080;
 
 //middleware
