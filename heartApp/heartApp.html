@@ -34,31 +34,79 @@
             <hr>
            <!--output boxes-->
            <div id="contain">
-                <div id="maxForm">
+                <button id="maxForm" data-modal="maxModal">
                     <p>Max heart rate</p>
                     <hr>
                     <p>{{heart.range()}}</p>
-                </div>
+                </button>
                 
-                <div id="lightForm">
+                <button id="lightForm" data-modal="lightModal">
                     <p>Light heart range</p>
                     <hr>
                     <p>{{heart.light()}}</p>
-                </div>
+                </button>
                 
-                <div id="mediumForm">
+                <button id="mediumForm" data-modal="mediumModal">
                     <p>Medium heart range</p>
                     <hr>
                     <p>{{heart.medium()}}</p>
-                </div>
+                </button>
                 
-                <div id="heavyForm">
+                <button id="heavyForm" data-modal="heavyModal">
                     <p>Heavy heart range</p>
                     <hr>
                     <p>{{heart.heavy()}}</p>
-                </div>
+                </button>
            </div>
-            
+
+            <!-- Modals used -->
+            <div id="maxModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is your maximum heart rate based on your age.</p>
+                    <p>Exceeding this could be detrimental to your health.</p>
+                    <p>For more information, consult the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association</a> website.</p>
+                </div>
+
+            </div>
+
+            <div id="lightModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is your heart range based on a light workout for your age.</p>
+                    <p>This is what one would expect from walking, lifting weights, or a light jog.</p>
+                    <p>For more information, consult the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association</a> website.</p>
+                </div>
+
+            </div>
+
+            <div id="mediumModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is your heart range based on a moderate workout for your age.</p>
+                    <p>This is what one would expect from jogging, biking, or swimming for an extended amount of time.</p>
+                    <p>For more information, consult the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association</a> website.</p>
+                </div>
+
+            </div> 
+
+            <div id="heavyModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is your heart range based on a heavy workout for your age.</p>
+                    <p>This is what one would expect from running, marathon training, or participating in a strenous activity for an extended amount of time.</p>
+                    <p>For more information, consult the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association</a> website.</p>
+                </div>
+
+            </div> 
             
         </div>
 
@@ -72,6 +120,9 @@
         <!--animate.css controller-->
         <script src="js/animate.js"></script>
 
+        <!--modal controller-->
+        <script src="js/modal.js"></script>
+
         <!--this is the module file-->
         <script src="js/heartModule.js"></script>
 
@@ -83,6 +134,6 @@
     </body>
 
     <footer id="bottomAnchor">
-        2017 <a href="https://sidjayisaok.herokuapp.com">Sid Jay</a>. This app uses Angular.js.
+        &copy 2017 <a href="https://sidjayisaok.herokuapp.com">Sid Jay</a>. This app uses data estimation from the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association.</a>
     </footer>
 </html>

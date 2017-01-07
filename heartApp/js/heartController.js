@@ -12,17 +12,17 @@ heartApp.controller('heartController', function($scope){
         light: function(){
             var heartObject;
             heartObject = $scope.heart;
-            return Math.floor(.5 * heartObject.rate) + " to " + Math.ceil(.65 * heartObject.rate) + " bpm";
+            return Math.floor(.3 * heartObject.rate) + " to " + Math.ceil(.49 * heartObject.rate) + " bpm";
         },
         medium: function(){
             var heartObject;
             heartObject = $scope.heart;
-            return Math.floor(.66 * heartObject.rate) + " to " + Math.ceil(.75 * heartObject.rate) + " bpm";
+            return Math.floor(.5 * heartObject.rate) + " to " + Math.ceil(.69 * heartObject.rate) + " bpm";
         },
         heavy: function(){
             var heartObject;
             heartObject = $scope.heart;
-            return Math.floor(.76 * heartObject.rate) + " to " + Math.ceil(.95 * heartObject.rate) + " bpm";
+            return Math.floor(.7 * heartObject.rate) + " to " + Math.ceil(.9 * heartObject.rate) + " bpm";
         }
     }
 });
