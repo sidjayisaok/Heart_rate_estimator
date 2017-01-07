@@ -13,62 +13,44 @@ var mediumForm = document.getElementById('mediumForm');
 var heavyForm = document.getElementById('heavyForm');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span0 = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
 
 // //function to execute the modal
-function startModal(btn, modal){
+function startModal(btn, modal, myspan){
 // When the user clicks the button, open the modal 
 btn.onclick = function(){
     console.log(modal);
     modal.style.display = "block";
 }
-}
 
-function spanModal(span, modal){
-// When the user clicks on <span> (x), close the modal
-span.onclick = function(){
+myspan.onclick = function(){
     console.log(modal);
     modal.style.display = "none";
 }
-}
 
-function endModal(modal){
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event){
     if (event.target === modal){
         console.log(modal);
         modal.style.display = "none";
     }
 }
+
 }
 
 //call functions for max form
-startModal(maxForm, maxModal);
-
-spanModal(span, maxModal);
-
-endModal(maxModal);
+startModal(maxForm, maxModal, span0);
 
 //call functions for light form
-startModal(lightForm, lightModal);
-
-spanModal(span, lightModal);
-
-endModal(lightModal);
+startModal(lightForm, lightModal, span1);
 
 //call functions for medium form
-startModal(mediumForm, mediumModal);
-
-spanModal(span, mediumModal);
-
-endModal(mediumModal);
+startModal(mediumForm, mediumModal, span2);
 
 //call functions for heavy form
-startModal(heavyForm, heavyModal);
-
-spanModal(span, heavyModal);
-
-endModal(heavyModal);
+startModal(heavyForm, heavyModal, span3);
 
 });
 

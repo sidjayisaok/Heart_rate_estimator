@@ -187,6 +187,7 @@ header, footer{
     padding: 20px;
     border: 1px solid #161616;
     width: 80%;
+    border-radius: 10%;
 }
 
 .modal-content:hover{
