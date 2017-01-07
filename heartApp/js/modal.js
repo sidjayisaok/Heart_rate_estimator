@@ -22,18 +22,15 @@ var span3 = document.getElementsByClassName("close")[3];
 function startModal(btn, modal, myspan){
 // When the user clicks the button, open the modal 
 btn.onclick = function(){
-    console.log(modal);
     modal.style.display = "block";
 }
 
 myspan.onclick = function(){
-    console.log(modal);
     modal.style.display = "none";
 }
 
 window.onclick = function(event){
     if (event.target === modal){
-        console.log(modal);
         modal.style.display = "none";
     }
 }
