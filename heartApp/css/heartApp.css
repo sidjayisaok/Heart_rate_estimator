@@ -210,7 +210,7 @@ header, footer{
 }
 
 /*for cell phones in portrait*/
-@media (max-width: 435px) and (orientation: portrait) {
+@media (max-width: 435px) and (orientation: portrait) and (max-aspect-ratio: 13/9){
     #contain{
         width: 400px;
         padding: .5%;
@@ -243,7 +243,7 @@ header, footer{
 }
 
 /*for cell phones in landscape*/
-@media (min-width: 500px) and (max-width: 750px) and (orientation: landscape){
+@media (min-width: 500px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 13/9){
     #ageForm{
         margin-left: 25%;
     }
