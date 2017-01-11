@@ -7,8 +7,12 @@ a:hover{
     color: #AAAAAA;
 }
 
+hr{
+    background-color: #550033;
+}
+
 body{
-    background-color: #FF4599;
+    background-color: #EE8888;
     object-fit: contain;
     font-family: 'Orbitron', sans-serif;
     font-size: 14px;
@@ -38,7 +42,10 @@ input[type=number]{
 
 #box{
     background-color: #FF1616;
-    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 60%;
     box-shadow: 1px 2px 3px #163216;
     color: #FFEEFF;
     padding: 10%;
@@ -152,8 +159,10 @@ header, footer{
 }
 
 #contain{
-    width: 800px;
-    max-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 110%;
+    max-height: 20%;
     padding: 5%;
 }
 
@@ -166,7 +175,7 @@ header, footer{
 }
 
 
-.modal {
+.modal{
     display: none;
     position: fixed;
     z-index: 1;
@@ -187,7 +196,7 @@ header, footer{
     padding: 20px;
     border: 1px solid #161616;
     width: 80%;
-    border-radius: 10%;
+    border-radius: 25%;
 }
 
 .modal-content:hover{
@@ -195,7 +204,7 @@ header, footer{
     box-shadow: 2px 4px 6px #111111;
 }
 
-.close {
+.close{
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -209,8 +218,15 @@ header, footer{
     cursor: pointer;
 }
 
+.myheart{
+    color: #FFAAFF;
+    font-size: 46px;
+    float: left;
+    font-weight: bold;
+}
+
 /*for cell phones in portrait*/
-@media (max-width: 435px) and (orientation: portrait) and (max-aspect-ratio: 13/9){
+@media (max-width: 435px) and (max-aspect-ratio: 16/9){
     #contain{
         width: 400px;
         padding: .5%;
@@ -243,7 +259,7 @@ header, footer{
 }
 
 /*for cell phones in landscape*/
-@media (min-width: 500px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 13/9){
+@media (min-width: 435px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 13/9){
     #ageForm{
         margin-left: 25%;
     }
@@ -262,11 +278,15 @@ header, footer{
     }
 }
 /*for ipads and tablets*/
-@media (min-width: 750px) and (orientation: portrait){
+@media (min-width: 750px) and (orientation: portrait) and (min-aspect-ratio: 9/16){
     #contain{
         margin-left: -12%;
         margin-bottom: 10%;
     } 
+
+    #box{
+        width: 77%;
+    }
 
     #ageForm{
         margin-left: 25%;
