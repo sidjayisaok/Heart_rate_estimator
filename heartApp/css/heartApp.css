@@ -211,8 +211,7 @@ header, footer{
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus{
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -247,6 +246,7 @@ header, footer{
     #box{
         height: 575px;
         width: 425px;
+        margin-left: 5%;
     }
 
     #topAnchor, #bottomAnchor{
@@ -259,18 +259,25 @@ header, footer{
 }
 
 /*for cell phones in landscape*/
-@media (min-width: 435px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 16/9){
+@media (min-width: 435px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 16/10){
     #ageForm{
-        margin-left: 25%;
+        margin-left: 30%;
     }
 
     #box{
-        width: 600px;
+        width: 650px;
     }
 
     #contain{
-        margin-left: -15%;
-        margin-bottom: 10%;
+        margin-left: -16%;
+        width: 110%;
+        padding: 5%;
+        display: inline-flex;
+    }
+
+    #maxForm, #lightForm, #mediumForm, #heavyForm{
+      width: 400px;
+      height: 150px;  
     }
 
     #topAnchor, #bottomAnchor{
