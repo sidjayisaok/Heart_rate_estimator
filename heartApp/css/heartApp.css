@@ -225,7 +225,7 @@ header, footer{
 }
 
 /*for cell phones in portrait*/
-@media (max-width: 601px) and (max-aspect-ratio: 16/9){
+@media (max-width: 601px) and (max-aspect-ratio: 16/10){
     #contain{
         width: 400px;
         padding: .5%;
@@ -269,7 +269,7 @@ header, footer{
     }
 
     #contain{
-        margin-left: -16%;
+        margin-left: -10%;
         width: 110%;
         padding: 5%;
         display: inline-flex;
@@ -287,7 +287,7 @@ header, footer{
 /*for ipads and tablets*/
 @media (min-width: 750px) and (orientation: portrait) and (min-aspect-ratio: 9/16){
     #contain{
-        margin-left: -12%;
+        margin-left: -10%;
         margin-bottom: 10%;
     } 
 
