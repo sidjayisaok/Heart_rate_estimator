@@ -250,11 +250,11 @@ header, footer{
     }
 
     #topAnchor, #bottomAnchor{
-        width: 550px;
+        width: 600px;
     }
 
     body{
-        max-width: 430px;
+        max-width: 600px;
     }
 }
 
