@@ -74,7 +74,7 @@ header, footer{
     background-color: #770000;
     box-shadow: 1px 2px 3px 1px #161616;
     padding: 1%;
-    margin-left: 250px;
+    margin-left: 30%;
     max-width: 250px;
     border: 1px #161632;
     border-radius: 50%;
@@ -159,7 +159,7 @@ header, footer{
 }
 
 #contain{
-    margin-left: auto;
+    margin-left: -7%;
     margin-right: auto;
     width: 110%;
     max-height: 20%;
