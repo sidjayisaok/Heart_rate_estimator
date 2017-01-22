@@ -7,6 +7,13 @@ a:hover{
     color: #AAAAAA;
 }
 
+img{
+    width: 3%;
+    margin-top: 2%;
+    margin-right: 10%;
+    background-color: #00CCFF;
+}
+
 hr{
     background-color: #550033;
 }
