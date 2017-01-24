@@ -240,6 +240,10 @@ header, footer{
         margin-left: 2.5%;
     }
 
+    img{
+        width: 8%;
+    }
+
     #ageForm{
         margin-left: 18%;
         width: 400px;
@@ -270,6 +274,10 @@ header, footer{
 @media (min-width: 435px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 16/10){
     #ageForm{
         margin-left: 30%;
+    }
+
+    img{
+        width: 6%;
     }
 
     #box{
