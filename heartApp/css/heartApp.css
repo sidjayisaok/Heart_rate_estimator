@@ -13,6 +13,13 @@ img{
     margin-right: 10%;
     background-color: #00CCFF;
     border-radius: 50%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 hr{
@@ -60,6 +67,8 @@ input[type=number]{
     margin: 1% 2% 1% 2%;
     text-align: center;
     border-radius: 5%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #box:hover{
@@ -86,6 +95,8 @@ header, footer{
     max-width: 250px;
     border: 1px #161632;
     border-radius: 50%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #ageForm:hover{
@@ -104,6 +115,8 @@ header, footer{
     float: left;
     border-radius: 25%;
     border: 1px #333333;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #maxForm:hover{
@@ -122,6 +135,8 @@ header, footer{
     float: left;
     border-radius: 30%;
     border: 1px #665544;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #lightForm:hover{
@@ -140,6 +155,8 @@ header, footer{
     float: left;
     border-radius: 40%;
     border: 1px #554433;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #mediumForm:hover{
@@ -158,6 +175,8 @@ header, footer{
     float: left;
     border-radius: 45%;
     border: 1px #442211;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #heavyForm:hover{
@@ -205,6 +224,8 @@ header, footer{
     border: 1px solid #161616;
     width: 80%;
     border-radius: 25%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 .modal-content:hover{
@@ -217,6 +238,8 @@ header, footer{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 .close:hover, .close:focus{
@@ -233,7 +256,7 @@ header, footer{
 }
 
 /*for cell phones in portrait*/
-@media (max-width: 601px) and (max-aspect-ratio: 16/10){
+@media (max-width: 790px) and (max-aspect-ratio: 16/10){
     #contain{
         width: 400px;
         padding: .5%;
@@ -271,7 +294,7 @@ header, footer{
 }
 
 /*for cell phones in landscape*/
-@media (min-width: 435px) and (max-width: 750px) and (orientation: landscape) and (min-aspect-ratio: 16/10){
+@media (min-width: 435px) and (max-width: 790px) and (orientation: landscape) and (min-aspect-ratio: 16/10){
     #ageForm{
         margin-left: 30%;
     }
@@ -301,7 +324,7 @@ header, footer{
     }
 }
 /*for ipads and tablets*/
-@media (min-width: 750px) and (orientation: portrait) and (min-aspect-ratio: 9/16){
+@media (min-width: 790px) and (orientation: portrait) and (min-aspect-ratio: 9/16){
     #contain{
         margin-left: -10%;
         margin-bottom: 10%;
