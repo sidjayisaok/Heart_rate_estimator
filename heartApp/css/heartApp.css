@@ -67,8 +67,8 @@ input[type=number]{
     margin: 1% 2% 1% 2%;
     text-align: center;
     border-radius: 5%;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: color 1s, box-shadow 1s;
+    transition: color 1s, box-shadow 1s;
 }
 
 #box:hover{
