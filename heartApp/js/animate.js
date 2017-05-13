@@ -8,7 +8,7 @@ var heavyForm = '#heavyForm';
 //animate.css classes
 var pulseClass = 'animated pulse';
 var zoomInClass = 'animated zoomIn';
-var flashClass = 'animated flash';
+var flashClass = 'animated jello';
 var endClass ='webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 //basic function

@@ -24,7 +24,7 @@
 
     <body>
         <div ng-app="heartApp" ng-controller="heartController" id="box">
-            <!--form-->
+            <!--ideal heart range-->
             <div id="ageForm">
                 <p>Enter age</p>
                 <hr>
@@ -70,6 +70,7 @@
                     <hr>
                     <p>This is your maximum heart rate based on your age.</p>
                     <p>Exceeding this could be detrimental to your health.</p>
+                    <p>Try to target a heart range from {{heart.ideal()}}</p>
                     <p>For more information, consult the <a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/Target-Heart-Rates_UCM_434341_Article.jsp">American Heart Association</a> website.</p>
                 </div>
 

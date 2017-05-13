@@ -13,17 +13,13 @@ img{
     margin-right: 10%;
     background-color: #00CCFF;
     border-radius: 50%;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
 }
 
 img:hover{
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-hr{
-    background-color: #550033;
+    transform: rotate(3600deg);
+    -webkit-transform: rotate(3600deg);
 }
 
 body{
@@ -67,12 +63,12 @@ input[type=number]{
     margin: 1% 2% 1% 2%;
     text-align: center;
     border-radius: 5%;
-    -webkit-transition: color 1s, box-shadow 1s;
-    transition: color 1s, box-shadow 1s;
+    -webkit-transition: background-color 1s, box-shadow 1s;
+    transition: background-color 1s, box-shadow 1s;
 }
 
 #box:hover{
-    background-color: #FF0808;
+    background-color: #FF0000;
     box-shadow: 2px 4px 6px #323232;
 }
 
@@ -85,6 +81,10 @@ header, footer{
     margin: 0 auto;
     height: 100px;
     text-align: center;
+}
+
+hr{
+    max-width: 90%;
 }
 
 #ageForm{
@@ -106,7 +106,7 @@ header, footer{
 }
 
 #maxForm{
-    background-color: #330000;
+    background-color: #530000;
     box-shadow: 1px 2px 3px #444444;
     padding: 1%;
     margin: 1%;
@@ -120,7 +120,7 @@ header, footer{
 }
 
 #maxForm:hover{
-    background-color: #550000;
+    background-color: #750000;
     box-shadow: 2px 4px 6px #222222;
     border: 3px #242424;
 }
