@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!--favicon-->
     <link rel="icon" type="image/png" sizes="16x16" href="misc/favicon-16x16.png">
+    <!--nvd3 stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
 
 
     <header id="topAnchor">
@@ -58,6 +60,10 @@
                     <p>{{heart.heavy()}}</p>
                 </button>
            </div>
+
+                <!--<div ng-controller="heartD3">
+                    <nvd3 options="options" data="data"></nvd3>
+                </div>-->
 
             <!-- Modals used -->
             <div id="maxModal" class="modal">
@@ -127,8 +133,16 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
 
         <!--Angular CDN-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+        <!--d3.js CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+        <!--nvD3 CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+
+        <!--angular-nvd3 CDN-->
+        <script src="https://rawgit.com/krispo/angular-nvd3/v1.0.4/dist/angular-nvd3.js"></script>
 
         <!--animate.css controller-->
         <script src="js/animate.js"></script>
@@ -141,6 +155,11 @@
 
         <!--this is the controller file-->
         <script src="js/heartController.js"></script>
+
+        <!--this is the d3 file-->
+        <script src="js/d3Module.js"></script>
+
+        
 
 
 
